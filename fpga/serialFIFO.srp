@@ -1,0 +1,43 @@
+SCUBA, Version Diamond (64-bit) 3.12.1.454
+Sun Sep 11 17:37:26 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : C:\lscc\diamond\3.12\ispfpga\bin\nt64\scuba.exe -w -n serialFIFO -lang verilog -synth lse -bus_exp 7 -bb -arch xo2c00 -type ebfifo -depth 64 -width 8 -rwidth 8 -pfu_fifo -no_enable -pe 8 -pf 56 
+    Circuit name     : serialFIFO
+    Module type      : ebfifo
+    Module Version   : 5.8
+    Ports            : 
+	Inputs       : Data[7:0], WrClock, RdClock, WrEn, RdEn, Reset, RPReset
+	Outputs      : Q[7:0], Empty, Full, AlmostEmpty, AlmostFull
+    I/O buffer       : not inserted
+    EDIF output      : serialFIFO.edn
+    Verilog output   : serialFIFO.v
+    Verilog template : serialFIFO_tmpl.v
+    Verilog testbench: tb_serialFIFO_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : serialFIFO.srp
+    Element Usage    :
+          AGEB2 : 16
+           AND2 : 2
+            CU2 : 16
+         FADD2B : 12
+        FD1P3BX : 6
+        FD1P3DX : 58
+        FD1S3BX : 2
+        FD1S3DX : 30
+            INV : 4
+          MUX41 : 8
+            OR2 : 1
+       ROM16X1A : 24
+       DPR16X4C : 8
+           XOR2 : 12
+    Estimated Resource Usage:
+            LUT : 135
+           DRAM : 8
+            Reg : 96

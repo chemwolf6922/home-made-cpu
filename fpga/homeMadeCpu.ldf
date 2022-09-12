@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="homeMadeCpu" device="LCMXO2-4000HC-4MG132C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="Serial" top="cpuTest"/>
+        <Source name="alu.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="mux.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="digitDecoder.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="registers.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="systemROM.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="systemRAM.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="memController.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Fetch.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="sysMux.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="cpu.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="debugDevice.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="serial.v" type="Verilog" type_short="Verilog">
+            <Options top_module="SerialTest"/>
+        </Source>
+        <Source name="serialFIFO.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="homeMadeCpu.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="homeMadeCpu1.sty"/>
+</BaliProject>

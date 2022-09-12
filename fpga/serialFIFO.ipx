@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="serialFIFO" module="FIFO_DC" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2022 09 11 17:37:27.542" version="5.8" type="Module" synthesis="lse" source_format="Verilog">
+  <Package>
+		<File name="serialFIFO.lpc" type="lpc" modified="2022 09 11 17:37:26.019"/>
+		<File name="serialFIFO.v" type="top_level_verilog" modified="2022 09 11 17:37:26.057"/>
+		<File name="serialFIFO_tmpl.v" type="template_verilog" modified="2022 09 11 17:37:26.057"/>
+		<File name="tb_serialFIFO_tmpl.v" type="testbench_verilog" modified="2022 09 11 17:37:26.061"/>
+  </Package>
+</DiamondModule>

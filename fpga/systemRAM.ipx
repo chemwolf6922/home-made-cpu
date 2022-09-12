@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="systemRAM" module="RAM_DQ" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2022 09 11 13:44:18.739" version="7.5" type="Module" synthesis="lse" source_format="Verilog">
+  <Package>
+		<File name="" type="" modified="2022 09 11 13:44:18.669"/>
+		<File name="systemRAM.lpc" type="lpc" modified="2022 09 11 13:44:17.359"/>
+		<File name="systemRAM.v" type="top_level_verilog" modified="2022 09 11 13:44:17.400"/>
+		<File name="systemRAM_tmpl.v" type="template_verilog" modified="2022 09 11 13:44:17.400"/>
+		<File name="tb_systemRAM_tmpl.v" type="testbench_verilog" modified="2022 09 11 13:44:17.403"/>
+  </Package>
+</DiamondModule>
