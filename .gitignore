@@ -1,3 +1,7 @@
 .vscode
 fpga/impl1
 fpga/homeMadeCpu_tcr.dir
+fpga/.recovery
+simulator/*.o
+simulator/*.d
+simulator/sim
