@@ -28,6 +28,10 @@ module Fetch (
     reg [31:0] cmdBuf;
     reg [31:0] cmd;
     reg pcppMusk;
+    reg intMusk;
+
+    wire interruptMusked;
+    assign interruptMusked = interrupt & intMusk;
 
     assign pcpp = pcppMusk & enable;
     
@@ -56,7 +60,7 @@ module Fetch (
         .in10 (9'b000_0_11_100),    // CRJMP
         .in11 (9'b000_0_00_010),    // STROE
         .in12 (9'b000_0_00_001),    // LOAD
-        .in13 (9'b000_0_00_100),    // (ADD)
+        .in13 (9'b000_0_00_100),    // INTCTRL
         .in14 (9'b000_0_00_100),    // (ADD)
         .in15 (9'b000_0_00_100),    // (ADD)
         .out({aluOpCode,aluSub,cjmp,crjmp,opNextAlu,opNextWrite,opNextRead})    
@@ -87,6 +91,7 @@ module Fetch (
         nextRead = 1'b0;
         interrupted = 1'b0;
         clearInterrupt = 1'b0;
+        intMusk = 1'b0; // interrupt is disabled by default
         pcppMusk = 1'b0;
         step = 1'b0;
     end
@@ -127,6 +132,9 @@ module Fetch (
                     else begin
                         sysMode = 2'b00;
                     end
+                    if(cmd[28:24]==5'd13) begin
+                        intMusk = cmd[0];
+                    end
                 end
             end
             else begin
@@ -143,7 +151,7 @@ module Fetch (
         end
     end
     // interrupted
-    always @(posedge interrupt or posedge clearInterrupt or negedge nrst) begin
+    always @(posedge interruptMusked or posedge clearInterrupt or negedge nrst) begin
         if(~nrst) begin
             interrupted = 1'b0;
         end

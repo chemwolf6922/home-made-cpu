@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DiamondModule name="systemROM" module="ROM" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2022 09 12 15:11:55.899" version="5.4" type="Module" synthesis="lse" source_format="Verilog">
+<DiamondModule name="systemROM" module="ROM" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2022 09 13 21:47:50.796" version="5.4" type="Module" synthesis="lse" source_format="Verilog">
   <Package>
-		<File name="" type="" modified="2022 09 12 15:11:55.830"/>
-		<File name="d:/workspace/home-made-cpu/fpga/systemrom.mem" type="mem" modified="2022 09 12 15:11:33.444"/>
-		<File name="systemROM.lpc" type="lpc" modified="2022 09 12 15:11:54.907"/>
-		<File name="systemROM.v" type="top_level_verilog" modified="2022 09 12 15:11:54.946"/>
-		<File name="systemROM_tmpl.v" type="template_verilog" modified="2022 09 12 15:11:54.946"/>
-		<File name="tb_systemROM_tmpl.v" type="testbench_verilog" modified="2022 09 12 15:11:54.947"/>
+		<File name="" type="" modified="2022 09 13 21:47:50.696"/>
+		<File name="d:/workspace/home-made-cpu/fpga/systemrom.mem" type="mem" modified="2022 09 13 21:47:17.797"/>
+		<File name="systemROM.lpc" type="lpc" modified="2022 09 13 21:47:49.719"/>
+		<File name="systemROM.v" type="top_level_verilog" modified="2022 09 13 21:47:49.758"/>
+		<File name="systemROM_tmpl.v" type="template_verilog" modified="2022 09 13 21:47:49.759"/>
+		<File name="tb_systemROM_tmpl.v" type="testbench_verilog" modified="2022 09 13 21:47:49.759"/>
   </Package>
 </DiamondModule>
